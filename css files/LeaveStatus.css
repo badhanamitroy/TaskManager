@@ -1,0 +1,80 @@
+/* Container for the notification system */
+*{
+    font-family: Arial, sans-serif;
+}
+.notification-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff5d1;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Individual notification block */
+.notification {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for notification box */
+.notification:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for the OK button */
+.ok {
+    background-color: #3b5998;
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover effect for the OK button */
+button:hover {
+    background-color: #2d4373;
+}
+
+/* Style for focus state */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(59, 89, 152, 0.7);
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+    .notification-container {
+        padding: 15px;
+    }
+    
+    .notification {
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

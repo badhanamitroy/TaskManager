@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the main heading */
+h1 {
+    text-align: center;
+    /* color: #ffffff; */
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #1e2a48;
+    padding: 15px;
+}
+
+/* Table container */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+    background-color: #d7e6f7;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Table header */
+th {
+    background: linear-gradient(135deg, #1e2a48, #283857);
+    color: #f8f8f8;
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+
+th#Tact, th#Tst, td#Tst {
+    text-align: center;
+}
+
+/* Table rows */
+td {
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+td a {
+    text-decoration: none;
+}
+
+td button {
+    font-size: 14px;
+    border: none;
+}
+
+/* Zebra striping for table rows */
+tr:nth-child(even) {
+    background-color: #e1f0ff;
+}
+
+tr:hover {
+    background-color: #c2d6ef;
+}
+
+/* Style for buttons */
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Edit button styling */
+button#Edit {
+    background-color: #3069d1;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(45, 152, 218, 0.4);
+}
+
+button#Edit:hover {
+    background-color: #2859b8;
+    box-shadow: 0px 6px 12px rgba(45, 152, 218, 0.5);
+}
+
+/* Delete button styling */
+button#Del {
+    background-color: #e74c3c;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(231, 76, 60, 0.4);
+}
+
+button#Del:hover {
+    background-color: #c0392b;
+    box-shadow: 0px 6px 12px rgba(231, 76, 60, 0.5);
+}
+
+/* Download button styling */
+button {
+    background-color: #1e2a48;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(30, 42, 72, 0.4);
+}
+
+button:hover {
+    background-color: #152040;
+    box-shadow: 0px 6px 12px rgba(30, 42, 72, 0.5);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 10px;
+    }
+
+    th {
+        background: #1e2a48;
+    }
+
+    td {
+        border-bottom: none;
+        border-top: 1px solid #dee2e6;
+    }
+
+    td:last-child {
+        text-align: left;
+    }
+}

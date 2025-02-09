@@ -1,0 +1,88 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for Edit Task Form */
+.edit-task-form-container {
+    background-color: #eaf1fb;
+    border: 2px solid #1a1a56;
+    border-radius: 10px;
+    padding: 25px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Title */
+h2 {
+    text-align: center;
+    color: #1a1a56;
+    margin-bottom: 25px;
+    font-size: 24px;
+    border-bottom: 2px solid #1a1a56;
+    padding-bottom: 10px;
+}
+
+/* Form Labels */
+label {
+    display: block;
+    font-weight: bold;
+    color: #1a1a56;
+    margin-bottom: 8px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="date"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1a1a56;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Select Dropdown */
+select {
+    background-color: #fff;
+}
+
+/* Submit Button */
+.update-btn {
+    background-color: #6bde68;
+    color: #fff;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit Button Hover */
+.update-btn:hover {
+    background-color: #57b653;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}

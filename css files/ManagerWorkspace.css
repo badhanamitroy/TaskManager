@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+header{
+    height: 20vh;
+    background-color: rgb(1, 1, 67);
+    border-bottom: 5px solid white;
+}
+.header-container{
+    height: 20vh;
+    /* border: 2px solid red; */
+    align-content: center;
+    /* justify-content: center; */
+    width: 90vw;
+    margin: auto;
+    display: flex;
+}
+.logo{
+    width: 110px;
+    height: 120px;
+    /* border: 2px solid yellow; */
+    padding: 7px 0;
+}
+.title{
+    /* border: 2px solid yellow; */
+    width: 50vw;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 55px;
+    align-content: center;
+    padding-left: 15px;;
+}
+.workspace{
+    min-height: 80vh;
+    display: flex;
+}
+
+.leftside {
+    width: 18vw;
+    min-height:80vh;
+    background-color: #2978b5; 
+    border-right: 5px solid white;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rightside{
+    justify-content: center;
+    align-items: center;
+    width:82vw;
+    background-color: #a0c1e8;
+    padding: 20px 0;
+}
+nav button {
+    width:120px;
+    border: 2px solid rgb(247, 112, 2);
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    /* border: 2px solid rgb(194, 247, 2); */
+}
+
+nav ul li {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px 0;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-bottom: 3px #0A1D5A;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: #21588d; /* Lighter shade of blue on hover */
+}
+
+.logout {
+    background-color: #0A1D5A;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+.logout:hover {
+    background-color: #21588d; /* Change color on hover */
+}
+
+/* Main Content Section */
+main {
+    flex-grow: 1;
+    background-color: #B0C4DE; /* Matches the light blue background */
+    padding: 20px;
+}
+
+/* Employee Workspace */
+.Employee-workspace main{
+    background-color: #f0e3b6;
+}
+.Employee-workspace aside {
+    background-color: #0077c8;
+    border-right: 5px solid white ;
+}
